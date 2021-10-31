@@ -11,4 +11,10 @@ jobs:
       - name: multiline script
         run: |
           node -v
-          npm -v
+          npmgi -v
+      - name: python Command
+        run: |
+          import platform
+          print
+          (platform.processor())
+        shell: python 
